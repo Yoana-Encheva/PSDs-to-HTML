@@ -20,17 +20,12 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
-        <![endif]-->
   </head>
 
   <body>
     <section id="hero">
       <div class="container">
-        <div class="nav-panel">
+        <header>
           <div class="logo alignLeft">
             <a href="/"><img src="img/logo.png" class="logo-img" /></a>
           </div>
@@ -44,7 +39,7 @@
               <li><a href="/">Contact</a></li>
             </ul>
           </nav>
-        </div>
+        </header>
 
         <div class="cta">
           <div class="imgs js-wp-2">
@@ -63,8 +58,8 @@
               gummi bears brownie toffee cupcake caramels brownie cookie.
             </p>
             <a href="/" class="cta-button"
-              ><img src="img/phone-icon.png" class="phone-icon" />Download on
-              appstore</a
+              ><img src="img/phone-icon.png" class="phone-icon" /><span>Download on
+              appstore</span></a
             >
           </div>
         </div>
@@ -132,32 +127,46 @@
     <footer>
       <div class="container">
         <div class="logo-footer">
-          <img src="img/site-logo.png" class="footer-logo" />
+          <a class="footer-logo" href="#"><img src="img/site-logo.png" /></a> 
         </div>
         <div class="sections">
                     <div class="col-4-footer">
                         <h4>Popular Posts</h4>
-                        <ul class="ul-posts">
-                            <li class="reddish-bg">
-                                I love donut <span class="block">bonbon cakes</span>
-                            </li>
-                            <li class="reddish-bg">Candy fruitcake biscuit chupa chups</li>
-                            <li class="reddish-bg">Candy fruitcake biscuit chupa chups</li>
+                        <ul class="posts">
+                          <li>
+                            <a href="#">
+                              <img src="img/rectangle.png">
+                              <h5>I love donut <br />bonbon cakes</h5>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/rectangle.png">
+                              <h5>Candy fruitcake biscuit chupa chups</h5>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="img/rectangle.png">
+                              <h5>Candy fruitcake biscuit chupa chups</h5>
+                            </a>
+                          </li>
                         </ul>
                     </div>
                     <div class="col-4-footer">
                         <h4>Suits on Twitter</h4>
-                        <div class="ul-tweets">
-                            <li>SadLex <span class="block smallText">10 hours ago</span></li>
-                            <li>
+                        <div class="tweets">
+                          <div><h5><a href="#">SadLex</a></h5>
+                          <span class="block smallText">10 hours ago</span></div>
+                            <p>
                                 Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </li>
-                            <li>Follow us</li>
+                            </p>
+                            <p><a href="">Follow us</a></p>
                         </div>
                     </div>
                     <div class="col-4-footer">
                         <h4>About</h4>
-                        <p class="p-about">
+                        <p class="about">
                             Cheesecake tiramisu dragée gummies donut cotton candy ice cream I
                             love halvah. Gummies croissant I love gummies gummies. Marshmallow I
                             love gummies sugar plum jelly-o pie.
@@ -186,7 +195,6 @@
       </div>
     </section>
 
-    <!-- Jquery first, then JavaScript -->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/wow.min.js"></script>
