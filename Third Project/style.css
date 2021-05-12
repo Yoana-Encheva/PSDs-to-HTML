@@ -664,3 +664,9 @@ header {
 #icons i:hover {
   cursor: pointer;
 }
+
+@media print {
+ p {
+   color: red!important;
+}
+}
